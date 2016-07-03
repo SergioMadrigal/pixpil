@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{6CE81160-AE62-C1C3-6180-88B8AA3AF03D}") = "pixpil-master", "Assembly-CSharp-firstpass.csproj", "{56D94C95-0139-A4C3-4D28-F3B1DF36DC3D}"
+EndProject
+Project("{6CE81160-AE62-C1C3-6180-88B8AA3AF03D}") = "pixpil-master", "Assembly-CSharp.csproj", "{59F20823-15FA-5D65-1BA6-CB083FAC25F5}"
+EndProject
+Project("{6CE81160-AE62-C1C3-6180-88B8AA3AF03D}") = "pixpil-master", "Assembly-UnityScript.unityproj", "{EC08F0F2-5208-E455-28D2-CC5A5B8A71A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56D94C95-0139-A4C3-4D28-F3B1DF36DC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D94C95-0139-A4C3-4D28-F3B1DF36DC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D94C95-0139-A4C3-4D28-F3B1DF36DC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D94C95-0139-A4C3-4D28-F3B1DF36DC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F20823-15FA-5D65-1BA6-CB083FAC25F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F20823-15FA-5D65-1BA6-CB083FAC25F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F20823-15FA-5D65-1BA6-CB083FAC25F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F20823-15FA-5D65-1BA6-CB083FAC25F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC08F0F2-5208-E455-28D2-CC5A5B8A71A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC08F0F2-5208-E455-28D2-CC5A5B8A71A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC08F0F2-5208-E455-28D2-CC5A5B8A71A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC08F0F2-5208-E455-28D2-CC5A5B8A71A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
