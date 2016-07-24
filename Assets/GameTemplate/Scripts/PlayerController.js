@@ -4,6 +4,13 @@ var bubles : GameObject;
 var fishSprite1 : Sprite;
 var fishSprite2 : Sprite;
 var fishSprite3 : Sprite;
+var fishSprite4 : Sprite;
+var fishSprite5 : Sprite;
+var fishSprite6 : Sprite;
+var fishSprite7 : Sprite;
+var fishSprite8 : Sprite;
+var fishSprite9 : Sprite;
+var fishSprite10 : Sprite;
 private var empty : boolean = true;
 function Start(){
 //if the number is 1
@@ -21,8 +28,43 @@ if(PlayerPrefs.GetInt("NumberFish") == 3){
 //fish sprite changes to the fishSprite3
 gameObject.GetComponent(SpriteRenderer).sprite = fishSprite3;
 }
+//if the number is 4
+if(PlayerPrefs.GetInt("NumberFish") == 4){
+//fish sprite changes to the fishSprite3
+gameObject.GetComponent(SpriteRenderer).sprite = fishSprite4;
+}
 
+//if the number is 5
+if(PlayerPrefs.GetInt("NumberFish") == 5){
+//fish sprite changes to the fishSprite3
+gameObject.GetComponent(SpriteRenderer).sprite = fishSprite5;
+}
+//if the number is 6
+if(PlayerPrefs.GetInt("NumberFish") == 6){
+//fish sprite changes to the fishSprite3
+gameObject.GetComponent(SpriteRenderer).sprite = fishSprite6;
+}
 
+//if the number is 7
+if(PlayerPrefs.GetInt("NumberFish") == 7){
+//fish sprite changes to the fishSprite3
+gameObject.GetComponent(SpriteRenderer).sprite = fishSprite7;
+}
+//if the number is 8
+if(PlayerPrefs.GetInt("NumberFish") == 8){
+//fish sprite changes to the fishSprite3
+gameObject.GetComponent(SpriteRenderer).sprite = fishSprite8;
+}
+//if the number is 9
+if(PlayerPrefs.GetInt("NumberFish") == 9){
+//fish sprite changes to the fishSprite3
+gameObject.GetComponent(SpriteRenderer).sprite = fishSprite9;
+}
+//if the number is 10
+if(PlayerPrefs.GetInt("NumberFish") == 10){
+//fish sprite changes to the fishSprite3
+gameObject.GetComponent(SpriteRenderer).sprite = fishSprite10;
+}
 }
 function Update () {
 //if the player is at the bottom of the stage

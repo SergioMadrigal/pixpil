@@ -1,5 +1,9 @@
 ﻿private var blackBackground : GameObject;
 private var empty : boolean = false;
+var history : GameObject;
+var menu : GameObject;
+var coins : GameObject;
+var score : GameObject;
 function Update(){
 //assign a variable object called BlackBackground
 blackBackground = GameObject.Find("BlackBackground");
@@ -25,6 +29,15 @@ gameObject.GetComponent(SpriteRenderer).color = Color(1,1,1,1);
 //button is the standard size
 //gameObject.transform.localScale = Vector3(1,1,1);
 //include the blackBackground animation
-blackBackground.GetComponent.<Animation>().Play("BlackBackgroundFinish");
+//blackBackground.GetComponent.<Animation>().Play("BlackBackgroundFinish");
+menu.SetActive(false);
+coins.SetActive(false);
+score.SetActive(false);
+history.SetActive(true);
 empty = true;
+}
+
+public function play(){
+blackBackground.GetComponent.<Animation>().Play("BlackBackgroundFinish");
+Application.LoadLevel("GameScene");
 }

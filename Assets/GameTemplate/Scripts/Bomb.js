@@ -1,6 +1,4 @@
-﻿#pragma strict
-import UnityEngine.Advertisements;
-private var playerParticle : GameObject;
+﻿private var playerParticle : GameObject;
 private var bubles : GameObject;
 private var timeToDownloadTheMenu : float = 1;
 private var empty : boolean = false;
@@ -8,8 +6,6 @@ var bomb : GameObject;
 var timeToDestroy : float = 1;
 var bombParticle : GameObject;
 private var blackBackground : GameObject;
-
-#if !UNITY_ADS 
 function Update(){
 //assign a variable object called BlackBackground
 blackBackground = GameObject.Find("BlackBackground");
@@ -30,7 +26,7 @@ blackBackground.GetComponent.<Animation>().Play("BlackBackgroundFinish");
 if(blackBackground.GetComponent(SpriteRenderer).color.a >= 1){
 empty = false;
 //load menu scene
-Application.LoadLevel("Menu");
+Application.LoadLevel("GameScene");
 }
 }
 if(timeToDestroy <= 0){

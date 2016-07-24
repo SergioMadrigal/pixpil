@@ -1,16 +1,13 @@
 ﻿var time1 : float;
 var time2 : float = 2;
 var bomb : GameObject;
-var enemy : GameObject;
-var enemyGreen : GameObject;
-var plankton : GameObject;
+var bomb1 : GameObject;
+var bomb2 : GameObject;
 var score : GameObject;
 var boost : int = 50;
 private var coordinateY : float;
-private var coordinatey1 : float;
-private var coordinatey2 : float;
-private var coordinatey3 : float;
-
+private var coordinateY1 : float;
+private var coordinateY2 : float;
 function Update () {
 //reduce the time
 time1 -= 1.5 * Time.deltaTime;
@@ -18,15 +15,12 @@ time1 -= 1.5 * Time.deltaTime;
 if(time1 <= 0){
 //select at random coordinateY
 coordinateY = Random.Range(-0.3, -4.2);
-coordinatey1 = Random.Range(-2, -6.2);
-coordinatey2 = Random.Range(0,-5);
-coordinatey3 = Random.Range(-0.6,-4);
+coordinateY1 = Random.Range(-1, -5.2);
+coordinateY2 = Random.Range(-0.6, -2.2);
 //create a bomb
 Instantiate(bomb, Vector2(transform.position.x + 5,coordinateY), Quaternion.identity);
-Instantiate(enemy, Vector2(transform.position.x + 7,coordinatey1),Quaternion.identity);
-Instantiate(enemyGreen, Vector2(transform.position.x + 9,coordinatey2),Quaternion.identity);
-Instantiate(plankton, Vector2(transform.position.x + 11,coordinatey3),Quaternion.identity);
-
+Instantiate(bomb1, Vector2(transform.position.x + 7,coordinateY1), Quaternion.identity);
+Instantiate(bomb2, Vector2(transform.position.x + 9,coordinateY2), Quaternion.identity);
 // time becomes equal to time2
 time1 = time2;
 }

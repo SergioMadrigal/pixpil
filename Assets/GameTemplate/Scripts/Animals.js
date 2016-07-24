@@ -25,7 +25,7 @@ blackBackground.GetComponent.<Animation>().Play("BlackBackgroundFinish");
 if(blackBackground.GetComponent(SpriteRenderer).color.a >= 1){
 empty = false;
 //load menu scene
-Application.LoadLevel("Menu");
+Application.LoadLevel("GameScene");
 }
 }
 if(timeToDestroy <= 0){ 
