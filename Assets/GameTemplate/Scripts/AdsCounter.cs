@@ -5,13 +5,24 @@ using UnityEngine.Advertisements;
 
 public class AdsCounter : MonoBehaviour {
 
-	int count;
+	static int reload;
+	public GameObject GameOver;
 
-	void Update(){
-		
+	void Start(){
+		Reload ();
+		Reload ();
+		Reload ();
+		Reload ();
 	}
 
-
+	public void Reload(){
+		if (reload++ % 10 == 0) {
+			GameOver.SetActive (true);
+			ShowAd ();
+		} else {
+			Debug.Log ("ads");
+		}
+	}
 
 	public void ShowAd()
 	{
