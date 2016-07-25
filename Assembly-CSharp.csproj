@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\GameTemplate\Scripts\AdsCounter.cs" />
      <Compile Include="Assets\GameTemplate\Scripts\Manager.cs" />
+     <Compile Include="Assets\GameTemplate\Scripts\Music.cs" />
      <Compile Include="Assets\GameTemplate\Scripts\ParallaxOffset.cs" />
      <Compile Include="Assets\GameTemplate\Scripts\SceneFadeInOut.cs" />
      <Compile Include="Assets\GameTemplate\Scripts\ScrollBackground.cs" />

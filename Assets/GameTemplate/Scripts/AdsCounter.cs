@@ -1,15 +1,23 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.Advertisements;
 
 public class AdsCounter : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	int count;
+
+	void Update(){
+		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+
+
+	public void ShowAd()
+	{
+		if (Advertisement.IsReady())
+		{
+			Advertisement.Show();
+		}
 	}
 }
