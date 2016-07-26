@@ -10,13 +10,10 @@ public class AdsCounter : MonoBehaviour {
 
 	void Start(){
 		Reload ();
-		Reload ();
-		Reload ();
-		Reload ();
 	}
 
 	public void Reload(){
-		if (reload++ % 10 == 0) {
+		 if (reload++ % 12 == 0) {
 			GameOver.SetActive (true);
 			ShowAd ();
 		} else {
