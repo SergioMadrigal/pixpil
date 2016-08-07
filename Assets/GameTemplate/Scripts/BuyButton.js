@@ -2,6 +2,7 @@
 var price : int;
 var allCoins : GameObject;
 var textPrice : GameObject;
+var coin : GameObject;
 function Start(){
 //if the fish already purchased
 if(PlayerPrefs.GetInt(fish.name) == 1){
@@ -39,5 +40,6 @@ PlayerPrefs.SetInt(fish.name, 1);
 PlayerPrefs.SetInt("AllCoins",allCoins.GetComponent(AllCoin).allCoins - price);
 //turn off button
 gameObject.SetActive(false);
+coin.SetActive(false);
 }
 }
